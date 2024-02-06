@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign up</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+  <script src="/js/validation.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <div class="nav container">
+        <a href="index.php" class="logo">anthology</a>
+
+        <a href="login.php" class="btn">login</a>
+    </div>
+  </header>
+
+  <!-- Sign up form -->
+  <div class="login">
+      <div class="login-container">
+          <h2>welcome to <br> Six pigenons</h2>
+  
+    <form action="process-signup.php" method="post" id="signup" novalidate>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+        
+        <div>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        
+        <div>
+            <label for="password_confirmation">Repeat password</label>
+            <input type="password" id="password_confirmation" name="password_confirmation">
+        </div>
+        
+        <div>
+            <label for="phone_number">Phone_number</label>
+            <input type="phone_number" id="phone_number" name="phone_number">
+        </div>
+
+        <button>Sign up</button>
+    </form>
+      </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container container">
+      <h2>anthology</h2>
+      <div class="footer-box">
+        <h3>information</h3>
+        <a href="https://www.google.com/maps/place/死海/@31.5369436,35.346974,10.97z/data=!4m13!1m7!3m6!1s0x15033c2eaf9fbba1:0xf38cff48a0c15882!2z5q275rW3!3b1!8m2!3d31.5590287!4d35.4731895!3m4!1s0x15033c2eaf9fbba1:0xf38cff48a0c15882!8m2!3d31.5590287!4d35.4731895">map</a>
+        <a href="https://en.wikipedia.org/wiki/Dead_Sea">Six Pigenons</a>
+        <a href="https://en.wikipedia.org/wiki/Dead_Sea#666_and_leisure">666</a>
+      </div>
+        
+      <div class="footer-box">
+        <h3>contact</h3>
+        <a href="#">+777 (0)666 666 6666</a>
+        <a href="#">sixpigeonsmail@gmail.com</a>
+
+        <div class="app">
+          <img src="https://img.icons8.com/material-outlined/24/000000/facebook-new.png"/>
+          <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new.png"/>
+          <img src="https://img.icons8.com/material-outlined/24/000000/twitter.png"/>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>&#169; Six Pigeons all right reserved</p>
+  </div>
+  <script>
+    const menuicon = document.querySelector(".menu-icon")
+    const navbar = document.querySelector(".navbar")
+    menuicon.addEventListener("click", ()=>{
+      navbar.classList.toggle("mobile-menu")
+    })
+  </script>
+</body>
+</html>
